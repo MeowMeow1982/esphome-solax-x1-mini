@@ -44,7 +44,7 @@ void SolaxMeterGateway::on_solax_meter_modbus_data(const std::vector<uint8_t> &d
     case REGISTER_HANDSHAKE:
       // Request: 0x01 0x03 0x00 0x0B 0x00 0x01 0xF5 0xC8
       //          addr func      reg       bytes*2
-      this->send_raw({0x01, 0x03, 0x02, 0x00, 0x00});
+      this->send_raw({0x01, 0x03, 0x01, 0x00, 0x00});
       break;
 
     case REGISTER_READ_POWER_32BIT_FLOAT:
