@@ -7,9 +7,9 @@ namespace solax_meter_gateway {
 static const char *const TAG = "solax_meter_gateway";
 
 static const uint8_t REGISTER_HANDSHAKE = 0x0B;
-static const uint8_t REGISTER_READ_POWER_16BIT_SINT = 0x16;
-static const uint8_t REGISTER_READ_POWER_32BIT_FLOAT = 0x15;
-static const uint8_t REGISTER_READ_TOTAL_ENERGY = 0x08;
+static const uint8_t REGISTER_READ_POWER_16BIT_SINT = 0x3A;
+static const uint8_t REGISTER_READ_POWER_32BIT_FLOAT = 0x35;
+static const uint8_t REGISTER_READ_TOTAL_ENERGY = 0x15;
 static const uint8_t REGISTER_READ_TOTAL_ENERGY_IMPORT_32BIT_FLOAT = 0x48;
 static const uint8_t REGISTER_READ_TOTAL_ENERGY_EXPORT_32BIT_FLOAT = 0x4A;
 
